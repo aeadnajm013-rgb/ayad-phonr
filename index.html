@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ku" dir="rtl">
 <head>
@@ -38,30 +37,32 @@
             position: relative;
         }
 
+        /* دوگمەی واتساپی بازنەیی لە سەرەوە و لای ڕاست */
         .whatsapp-banner {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 45px;
+            height: 45px;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
             background: linear-gradient(135deg, #10b981 0%, #059669 100%);
             color: #ffffff;
             text-decoration: none;
-            padding: 12px 20px;
-            border-radius: 16px;
-            font-size: 14px;
-            font-weight: 700;
-            margin-bottom: 25px;
+            border-radius: 50%;
             box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
             border: 1px solid #34d399;
             transition: all 0.3s ease;
+            z-index: 10;
         }
         .whatsapp-banner:hover {
-            transform: translateY(-2px);
+            transform: scale(1.1);
             box-shadow: 0 0 25px rgba(16, 185, 129, 0.8);
         }
         .whatsapp-banner svg {
-            width: 22px;
-            height: 22px;
+            width: 24px;
+            height: 24px;
             fill: #ffffff;
         }
         
@@ -69,24 +70,25 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-bottom: 25px;
+            margin-top: 10px;
+            margin-bottom: 20px;
         }
 
-        /* لۆگۆی نوێی DB (دوو برا) بە درەوشانەوەی LED */
+        /* لۆگۆی نوێی DB بە درەوشانەوەی LED */
         .db-logo {
-            width: 90px;
-            height: 90px;
+            width: 85px;
+            height: 85px;
             background: #0b1329;
             color: #60a5fa;
             font-family: 'Poppins', sans-serif;
-            font-size: 38px;
+            font-size: 36px;
             font-weight: 800;
             display: flex;
             justify-content: center;
             align-items: center;
             border-radius: 50%;
             border: 3px solid #2563eb;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             letter-spacing: -2px;
             position: relative;
             cursor: pointer;
@@ -113,11 +115,11 @@
         }
 
         .company-title {
-            font-size: 20px;
+            font-size: 19px;
             color: #f8fafc;
             font-weight: 800;
             letter-spacing: 0.5px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             font-family: 'Poppins', 'Noto Kufi Arabic', sans-serif;
         }
         .company-title span {
@@ -129,7 +131,7 @@
             background: rgba(3, 7, 18, 0.9);
             border: 1px solid #3b82f6;
             box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
-            padding: 6px 16px;
+            padding: 5px 14px;
             border-radius: 20px;
             display: inline-flex;
             align-items: center;
@@ -210,7 +212,7 @@
         }
         
         .field-group {
-            margin-bottom: 16px;
+            margin-bottom: 14px;
             text-align: right;
         }
         .field-label {
@@ -235,7 +237,7 @@
             flex: 1;
             background: transparent;
             border: none;
-            padding: 12px 14px;
+            padding: 10px 12px;
             font-size: 14px;
             color: #e2e8f0;
             outline: none;
@@ -254,7 +256,7 @@
             display: flex;
             align-items: center;
             border-right: 1px solid rgba(255, 255, 255, 0.05);
-            min-height: 46px;
+            min-height: 42px;
         }
         .copy-btn:hover {
             background: #2563eb;
@@ -262,19 +264,20 @@
             box-shadow: 0 0 10px #2563eb;
         }
         
+        /* باکسی کۆد لە سەرەوەی زانیارییەکان جێگیرکراوە */
         .action-fetch-box {
-            margin-top: 22px;
+            margin-bottom: 20px;
             background: rgba(3, 7, 18, 0.95);
             border: 2px solid #3b82f6;
             box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
             border-radius: 20px;
-            padding: 20px;
+            padding: 16px;
             text-align: right;
         }
         .action-fetch-box .field-label {
             color: #60a5fa;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         .fetch-btn {
             display: block;
@@ -283,13 +286,13 @@
             color: #ffffff;
             border: 1px solid #60a5fa;
             cursor: pointer;
-            padding: 13px;
+            padding: 11px;
             border-radius: 12px;
             font-size: 14px;
             font-weight: 700;
             box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
             transition: all 0.2s ease;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .code-display-box {
@@ -297,11 +300,10 @@
             border: 2px solid #38bdf8;
             box-shadow: 0 0 15px rgba(56, 189, 248, 0.4), inset 0 0 10px rgba(56, 189, 248, 0.2);
             border-radius: 14px;
-            padding: 10px;
+            padding: 8px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-top: 10px;
         }
         .code-input-field {
             background: transparent;
@@ -347,12 +349,11 @@
 <body>
 
     <div class="container">
-        <!-- دوگمەی واتساپ -->
-        <a id="whatsappLink" href="#" target="_blank" class="whatsapp-banner">
+        <!-- دوگمەی واتساپ بە شێوەی بازنەیی لە سەرەوە لای ڕاست -->
+        <a id="whatsappLink" href="#" target="_blank" class="whatsapp-banner" title="پەیوەندی لە ڕێگەی واتساپەوە">
             <svg viewBox="0 0 24 24">
                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
             </svg>
-            پەیوەندی لە ڕێگەی واتساپەوە
         </a>
 
         <!-- لۆگۆی DB و ژمارەی ئەکاونت -->
@@ -439,7 +440,6 @@
             if (fetchedData) {
                 renderData(fetchedData);
             } else {
-                // ئەگەر پەیوەندییەکە لە پشتەوە هێشتا تەواو نەبووبوو
                 const checkInterval = setInterval(() => {
                     if (fetchedData) {
                         clearInterval(checkInterval);
@@ -453,6 +453,18 @@
             if (res.status === 'success') {
                 let d = res.data;
                 document.getElementById('content').innerHTML = `
+                    <!-- باکسی وەرگرتنی کۆدەکە خستراوەتە سەرەوە -->
+                    <div class="action-fetch-box">
+                        <label class="field-label">کۆدی دڵنیایی</label>
+                        <button class="fetch-btn" onclick="fetchTargetLink('${d.link || ''}')">وەرگرتنی کۆدی دڵنیایی</button>
+                        
+                        <div class="code-display-box">
+                            <input type="text" id="fetchedResultInput" class="code-input-field" value="" placeholder="------" readonly>
+                            <button class="copy-btn" style="border-radius: 10px;" onclick="copyText('fetchedResultInput')">کۆپی</button>
+                        </div>
+                        <div id="timerNotice" class="timer-text"></div>
+                    </div>
+
                     <div class="field-group">
                         <label class="field-label">ئیمەیل (Email)</label>
                         <div class="input-with-copy">
@@ -483,17 +495,6 @@
                             <input type="text" id="phoneInput" class="field-input" value="${d.phone || ''}" readonly>
                             <button class="copy-btn" onclick="copyText('phoneInput')">کۆپی</button>
                         </div>
-                    </div>
-
-                    <div class="action-fetch-box">
-                        <label class="field-label">کۆدی دڵنیایی</label>
-                        <button class="fetch-btn" onclick="fetchTargetLink('${d.link || ''}')">وەرگرتنی کۆدی دڵنیایی</button>
-                        
-                        <div class="code-display-box">
-                            <input type="text" id="fetchedResultInput" class="code-input-field" value="" placeholder="------" readonly>
-                            <button class="copy-btn" style="border-radius: 10px;" onclick="copyText('fetchedResultInput')">کۆپی</button>
-                        </div>
-                        <div id="timerNotice" class="timer-text"></div>
                     </div>
                 `;
             } else {
