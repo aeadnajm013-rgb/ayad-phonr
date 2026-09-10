@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMPANY DU BRA - زانیاری ئەکاونت</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <title>ABO PHONE - زانیاری ئەکاونت</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;600;700;800&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -15,7 +15,7 @@
         
         body {
             background: #030712;
-            background: radial-gradient(circle at top, #0f172a 0%, #030712 100%);
+            background: radial-gradient(circle at top, #141000 0%, #030712 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -23,11 +23,11 @@
             padding: 20px;
         }
         .container {
-            background: rgba(15, 23, 42, 0.95);
+            background: rgba(15, 15, 18, 0.95);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 2px solid #2563eb;
-            box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+            border: 2px solid #eab308;
+            box-shadow: 0 0 25px rgba(234, 179, 8, 0.25);
             width: 100%;
             max-width: 440px;
             border-radius: 28px;
@@ -75,61 +75,58 @@
         }
 
         .db-logo {
-            width: 85px;
-            height: 85px;
-            background: #0b1329;
-            color: #60a5fa;
-            font-family: 'Poppins', sans-serif;
-            font-size: 36px;
-            font-weight: 800;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            border: 3px solid #2563eb;
-            margin-bottom: 10px;
-            letter-spacing: -2px;
+            width: 140px;
+            height: 120px;
+            margin-bottom: 12px;
             position: relative;
             cursor: pointer;
             animation: ledPulse 2s infinite alternate;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #090803;
+            padding: 10px;
+            border-radius: 18px;
+        }
+
+        .db-logo svg {
+            width: 100%;
+            height: 100%;
         }
 
         @keyframes ledPulse {
             0% {
-                box-shadow: 0 0 10px #2563eb, inset 0 0 10px #2563eb;
-                text-shadow: 0 0 5px #60a5fa;
-                border-color: #2563eb;
+                box-shadow: 0 0 12px #ca8a04, inset 0 0 8px #ca8a04;
+                border: 2px solid #ca8a04;
             }
             50% {
-                box-shadow: 0 0 25px #3b82f6, inset 0 0 15px #3b82f6;
-                text-shadow: 0 0 15px #93c5fd, 0 0 25px #3b82f6;
-                border-color: #60a5fa;
+                box-shadow: 0 0 25px #eab308, inset 0 0 15px #eab308;
+                border: 2px solid #fde047;
                 transform: scale(1.03);
             }
             100% {
-                box-shadow: 0 0 35px #1d4ed8, inset 0 0 20px #1d4ed8;
-                text-shadow: 0 0 20px #60a5fa, 0 0 30px #2563eb;
-                border-color: #1d4ed8;
+                box-shadow: 0 0 35px #a16207, inset 0 0 20px #a16207;
+                border: 2px solid #a16207;
             }
         }
 
         .company-title {
-            font-size: 19px;
+            font-size: 22px;
             color: #f8fafc;
             font-weight: 800;
-            letter-spacing: 0.5px;
+            letter-spacing: 1px;
             margin-bottom: 10px;
             font-family: 'Poppins', 'Noto Kufi Arabic', sans-serif;
         }
         .company-title span {
-            color: #3b82f6;
-            text-shadow: 0 0 10px rgba(59, 130, 246, 0.8);
+            color: #eab308;
+            text-shadow: 0 0 12px rgba(234, 179, 8, 0.8);
         }
 
         .account-badge {
             background: rgba(3, 7, 18, 0.9);
-            border: 1px solid #3b82f6;
-            box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+            border: 1px solid #eab308;
+            box-shadow: 0 0 10px rgba(234, 179, 8, 0.3);
             padding: 5px 14px;
             border-radius: 20px;
             display: inline-flex;
@@ -144,7 +141,7 @@
         .account-badge input {
             background: transparent;
             border: none;
-            color: #60a5fa;
+            color: #fde047;
             font-size: 15px;
             font-weight: 700;
             width: 75px;
@@ -226,8 +223,8 @@
             display: flex;
             align-items: center;
             background: rgba(3, 7, 18, 0.8);
-            border: 1px solid #1e40af;
-            box-shadow: 0 0 8px rgba(30, 64, 175, 0.2);
+            border: 1px solid #ca8a04;
+            box-shadow: 0 0 8px rgba(202, 138, 4, 0.2);
             border-radius: 12px;
             overflow: hidden;
             transition: all 0.3s ease;
@@ -244,11 +241,11 @@
             font-family: 'Poppins', 'Noto Kufi Arabic', sans-serif;
         }
         .copy-btn {
-            background: rgba(30, 41, 59, 0.8);
+            background: rgba(45, 36, 10, 0.8);
             border: none;
             padding: 0 14px;
             cursor: pointer;
-            color: #60a5fa;
+            color: #fde047;
             font-size: 12px;
             font-weight: 700;
             transition: background 0.2s, color 0.2s;
@@ -258,46 +255,45 @@
             min-height: 38px;
         }
         .copy-btn:hover {
-            background: #2563eb;
+            background: #ca8a04;
             color: #ffffff;
-            box-shadow: 0 0 10px #2563eb;
+            box-shadow: 0 0 10px #ca8a04;
         }
         
-        /* باکسی کۆدەکە (پیشاندانی کۆد لە سەرەوە و دوگمە لە خوارەوە) */
         .action-fetch-box {
             margin: 14px 0;
             background: rgba(3, 7, 18, 0.95);
-            border: 1.5px solid #3b82f6;
-            box-shadow: 0 0 12px rgba(59, 130, 246, 0.25);
+            border: 1.5px solid #eab308;
+            box-shadow: 0 0 12px rgba(234, 179, 8, 0.25);
             border-radius: 14px;
             padding: 12px;
             text-align: right;
         }
         .action-fetch-box .field-label {
-            color: #60a5fa;
+            color: #fde047;
             font-weight: 700;
             margin-bottom: 6px;
         }
         .fetch-btn {
             display: block;
             width: 100%;
-            background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+            background: linear-gradient(135deg, #ca8a04 0%, #854d0e 100%);
             color: #ffffff;
-            border: 1px solid #60a5fa;
+            border: 1px solid #fde047;
             cursor: pointer;
             padding: 9px;
             border-radius: 8px;
             font-size: 12px;
             font-weight: 700;
-            box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+            box-shadow: 0 0 10px rgba(202, 138, 4, 0.4);
             transition: all 0.2s ease;
             margin-top: 8px;
         }
 
         .code-display-box {
             background: #020617;
-            border: 1.5px solid #38bdf8;
-            box-shadow: 0 0 10px rgba(56, 189, 248, 0.3), inset 0 0 6px rgba(56, 189, 248, 0.15);
+            border: 1.5px solid #fde047;
+            box-shadow: 0 0 10px rgba(253, 224, 71, 0.3), inset 0 0 6px rgba(253, 224, 71, 0.15);
             border-radius: 10px;
             padding: 4px 8px;
             display: flex;
@@ -307,7 +303,7 @@
         .code-input-field {
             background: transparent;
             border: none;
-            color: #38bdf8;
+            color: #fde047;
             font-size: 16px;
             font-weight: 800;
             text-align: center;
@@ -325,12 +321,11 @@
             min-height: 14px;
         }
 
-        /* دوگمەی کردنەوەی پەڕەی دووەم بۆ زانیارییە شاراوەکان */
         .show-modal-btn {
             width: 100%;
-            background: rgba(30, 41, 59, 0.8);
-            border: 1.5px solid #3b82f6;
-            color: #38bdf8;
+            background: rgba(30, 25, 10, 0.8);
+            border: 1.5px solid #eab308;
+            color: #fde047;
             padding: 10px;
             border-radius: 12px;
             font-size: 13px;
@@ -342,15 +337,14 @@
             gap: 8px;
             margin-top: 15px;
             transition: all 0.3s ease;
-            box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+            box-shadow: 0 0 10px rgba(234, 179, 8, 0.2);
         }
         .show-modal-btn:hover {
-            background: #1e3a8a;
+            background: #713f12;
             color: #ffffff;
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+            box-shadow: 0 0 15px rgba(234, 179, 8, 0.5);
         }
 
-        /* پەڕەی نوێ (Modal) بۆ پیشاندانی ڕۆژی لەدایکبوون و ژمارەی تەلەفۆن */
         .modal-overlay {
             position: fixed;
             top: 0;
@@ -373,9 +367,9 @@
             pointer-events: auto;
         }
         .modal-card {
-            background: rgba(15, 23, 42, 0.98);
-            border: 2px solid #38bdf8;
-            box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+            background: rgba(15, 15, 18, 0.98);
+            border: 2px solid #fde047;
+            box-shadow: 0 0 25px rgba(253, 224, 71, 0.4);
             border-radius: 20px;
             width: 100%;
             max-width: 380px;
@@ -396,7 +390,7 @@
             padding-bottom: 8px;
         }
         .modal-title {
-            color: #38bdf8;
+            color: #fde047;
             font-size: 14px;
             font-weight: 800;
         }
@@ -444,10 +438,31 @@
             </svg>
         </a>
 
-        <!-- لۆگۆی DB و ژمارەی ئەکاونت -->
+        <!-- لۆگۆی ABO Phone و ژمارەی ئەکاونت -->
         <div class="logo-container">
-            <div class="db-logo">DB</div>
-            <div class="company-title">COMPANY <span>DU BRA</span></div>
+            <div class="db-logo">
+                <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg">
+                    <!-- فرەیمی مۆبایل و پیتی A -->
+                    <rect x="25" y="15" width="75" height="135" rx="12" fill="none" stroke="#eab308" stroke-width="6"/>
+                    <rect x="52" y="22" width="20" height="5" rx="2" fill="#eab308"/>
+                    <path d="M 38 125 L 62 45 L 86 125 M 46 95 L 78 95 L 62 112" fill="none" stroke="#fde047" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <!-- پیتی B -->
+                    <path d="M 120 45 L 148 45 C 168 45 168 78 148 78 L 120 78 L 120 45 Z" fill="none" stroke="#fde047" stroke-width="7" stroke-linejoin="round"/>
+                    <path d="M 120 78 L 152 78 C 174 78 174 115 152 115 L 120 115 L 120 78 Z" fill="none" stroke="#fde047" stroke-width="7" stroke-linejoin="round"/>
+                    <circle cx="140" cy="62" r="4" fill="#fde047"/>
+                    <circle cx="143" cy="96" r="4" fill="#fde047"/>
+
+                    <!-- پیتی O -->
+                    <circle cx="215" cy="80" r="32" fill="none" stroke="#fde047" stroke-width="7"/>
+                    <circle cx="215" cy="80" r="18" fill="none" stroke="#fde047" stroke-width="3" stroke-dasharray="4 2"/>
+
+                    <!-- خەتی جیاکەرەوە و نووسینی Phone -->
+                    <line x1="110" y1="123" x2="245" y2="123" stroke="#eab308" stroke-width="3"/>
+                    <text x="178" y="148" font-family="'Poppins', sans-serif" font-weight="800" font-size="22" fill="#fde047" text-anchor="middle" letter-spacing="2">Phone</text>
+                </svg>
+            </div>
+            <div class="company-title">ABO <span>PHONE</span></div>
             
             <div class="account-badge">
                 <span>ئەکاونت:</span>
@@ -511,8 +526,8 @@
 
         if (accountNumber) {
             document.getElementById('accSmallInput').value = accountNumber;
-            const phone = "9647517393932";
-            const message = encodeURIComponent(`سڵاو، من ئەکاونتی ژمارە ${accountNumber}م هەیە لە کۆمپانیای دوو برا.`);
+            const phone = "9647507539339";
+            const message = encodeURIComponent(`سڵاو، من ئەکاونتی ژمارە ${accountNumber}م هەیە لە ABO PHONE.`);
             document.getElementById('whatsappLink').href = `https://wa.me/${phone}?text=${message}`;
 
             fetch(`${scriptURL}?account=${accountNumber}`)
@@ -564,7 +579,6 @@
             if (res.status === 'success') {
                 let d = res.data;
                 
-                // پڕکردنەوەی بەهاکانی پەڕەی دووەم
                 document.getElementById('bdayInput').value = d.birthday || '';
                 document.getElementById('phoneInput').value = d.phone || '';
 
@@ -585,7 +599,6 @@
                         </div>
                     </div>
 
-                    <!-- باکسی وەرگرتنی کۆدەکە (کۆد سەرەوە و دوگمە خوارەوە) -->
                     <div class="action-fetch-box">
                         <label class="field-label">کۆدی دڵنیایی</label>
                         
@@ -598,7 +611,6 @@
                         <button class="fetch-btn" onclick="fetchTargetLink('${d.link || ''}')">وەرگرتنی کۆدی دڵنیایی</button>
                     </div>
 
-                    <!-- دوگمەی ئایکۆندار بۆ پیشاندانی ڕۆژی لەدایکبوون و ژمارەی تەلەفۆن لە پەڕەیەکی تر -->
                     <button class="show-modal-btn" onclick="toggleModal(true)">
                         <span>👁️</span> پێشان دانی زانیارییە شاراوەکان (روز / ژمارە)
                     </button>
